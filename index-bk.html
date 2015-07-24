@@ -18,20 +18,23 @@
         <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
         
         <!-- CSS -->
-         <link rel="stylesheet" href="css/main.css">          
+        <link rel="stylesheet" href="css/main.css">        
 
       
     <script type="text/javascript">
+			
+			
 			function loadScript() {
 			  var script = document.createElement('script');
 			  script.type = 'text/javascript';
 			  script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp' +
 				  '&signed_in=true&callback=init_map';
-			 	 document.body.appendChild(script);
+			  document.body.appendChild(script);
 			}
 			
 			window.onload = loadScript;    </script>
-   <script type="text/javascript" src="js/first.js"></script>
+   
+    
     </head>
     <body class="appear-animate">
        <div class="hidden">
@@ -47,14 +50,9 @@
         <div class="page" id="top">
             
             <!-- Accueil Section -->
-            <section class="home-section bg-gray parallax-2"  id="Accueil">
+            <section class="home-section bg-gray parallax-2" data-background="images/accueil/plage-de-l-ecluse-dinard.jpg" id="Accueil">
                 <div class="js-height-full">
-                    <script type="text/javascript">  
-					 $("#Accueil").imagesLoaded(function(){
-           				 $(".page-loader div").fadeOut();
-       				 $(".page-loader").delay(200).fadeOut("slow");
-       				 });
-       				 </script>
+                    
                     <!-- Hero Content -->
                     <div class="home-content container">
                         <div class="home-text">
@@ -1102,9 +1100,8 @@
         
         
         <!-- JS -->
-               <script type="text/javascript" src="js/main.min.js"></script>
-              
-
+       <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+      <script type="text/javascript" src="js/main.js"></script>
         <noscript>Votre navigateur ne supporte pas Javascript</noscript>       
         <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
         
